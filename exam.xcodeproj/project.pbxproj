@@ -15,6 +15,8 @@
 		2D15672920296CCB00EFF364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D15672720296CCB00EFF364 /* LaunchScreen.storyboard */; };
 		2D15673420296CCC00EFF364 /* examTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15673320296CCC00EFF364 /* examTests.swift */; };
 		2D15673F20296CCC00EFF364 /* examUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15673E20296CCC00EFF364 /* examUITests.swift */; };
+		2D15674D20297F2100EFF364 /* FirstLoadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15674C20297F2100EFF364 /* FirstLoadController.swift */; };
+		2D1567562029C06C00EFF364 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1567552029C06C00EFF364 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2D15673A20296CCC00EFF364 /* examUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = examUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D15673E20296CCC00EFF364 /* examUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examUITests.swift; sourceTree = "<group>"; };
 		2D15674020296CCC00EFF364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D15674C20297F2100EFF364 /* FirstLoadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoadController.swift; sourceTree = "<group>"; };
+		2D1567552029C06C00EFF364 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				2D15671B20296CCB00EFF364 /* AppDelegate.swift */,
-				2D15671D20296CCB00EFF364 /* ViewController.swift */,
-				2D15671F20296CCB00EFF364 /* Main.storyboard */,
+				2D15675220299A5A00EFF364 /* Controller */,
+				2D15675120299A4E00EFF364 /* Model */,
+				2D15675020299A4A00EFF364 /* View */,
 				2D15672520296CCB00EFF364 /* Assets.xcassets */,
 				2D15672720296CCB00EFF364 /* LaunchScreen.storyboard */,
 				2D15672A20296CCC00EFF364 /* Info.plist */,
-				2D15672220296CCB00EFF364 /* exam.xcdatamodeld */,
 			);
 			path = exam;
 			sourceTree = "<group>";
@@ -126,6 +130,32 @@
 				2D15674020296CCC00EFF364 /* Info.plist */,
 			);
 			path = examUITests;
+			sourceTree = "<group>";
+		};
+		2D15675020299A4A00EFF364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D15671F20296CCB00EFF364 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D15675120299A4E00EFF364 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D15672220296CCB00EFF364 /* exam.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D15675220299A5A00EFF364 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D15674C20297F2100EFF364 /* FirstLoadController.swift */,
+				2D15671D20296CCB00EFF364 /* ViewController.swift */,
+				2D1567552029C06C00EFF364 /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D15674D20297F2100EFF364 /* FirstLoadController.swift in Sources */,
 				2D15671E20296CCB00EFF364 /* ViewController.swift in Sources */,
+				2D1567562029C06C00EFF364 /* DetailViewController.swift in Sources */,
 				2D15672420296CCB00EFF364 /* exam.xcdatamodeld in Sources */,
 				2D15671C20296CCB00EFF364 /* AppDelegate.swift in Sources */,
 			);
@@ -431,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MV8257SPF4;
 				INFOPLIST_FILE = exam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenchiyun.exam;
@@ -445,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MV8257SPF4;
 				INFOPLIST_FILE = exam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenchiyun.exam;
